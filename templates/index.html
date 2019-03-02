@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+    <meta charset="utf-8">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	<link href="static/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="static/fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+	<!-- //google fonts -->
+	
+</head>
+<body>
+
+<div class="signupform">
+	<h1>IRIS FLOWER PREDICTION</h1>
+		<div class="container">
+			<div class="agile_info">
+				<div class="w3_info">
+					<h2 align="center" >Enter Details in cm.</h2>
+						<form align = 'center' action="{{url_for('filtered')}}" method="get">
+							<div class="input-group">
+								<input type="text" name = "input1" placeholder="sepal length" required=""> 
+							</div>
+							<div class="input-group">
+								<input type="text" name = "input2" placeholder="sepal width" required=""> 
+							</div>
+							<div class="input-group">
+								
+								<input type="text"  name = "input3" placeholder="petal length" required="">
+							</div>
+							<div class="input-group">
+								
+								<input type="text" name = "input4" placeholder="petal width" required="">
+							</div>        
+								<button class="btn btn-danger btn-block" type="submit">Predict</button >                
+						</form>
+				</div>
+			</div>
+			<!-- //main content -->
+		</div>
+</div>
+	
+</body>
+</html>
