@@ -1,4 +1,5 @@
 from flask import *
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.externals import joblib
 import numpy as np
 app = Flask(__name__)
